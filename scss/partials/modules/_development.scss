@@ -1,0 +1,30 @@
+
+
+#dev  {
+    width: 100vw;
+    text-align: center;
+    margin: 250px 0px;
+    #dev_projects {
+        .dev_project {
+            height: 500px;
+            width: inherit;
+            background: rgb(243, 243, 243);
+            margin: 50px 200px;
+            padding: 25px;
+
+        
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.single_dev_project_container {
+    margin-top: 150px;
+}
+
+.project_description {
+    padding: 25px 250px;
+}
