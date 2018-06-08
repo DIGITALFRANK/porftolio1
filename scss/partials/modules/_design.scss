@@ -1,0 +1,24 @@
+
+
+#design  {
+    width: 100vw;
+    text-align: center;
+    #design_projects {
+        .design_project {
+            height: 500px;
+            width: inherit;
+            background: rgb(207, 207, 207);
+            margin: 50px 200px;
+
+        
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.single_design_project_container {
+    margin-top: 150px;
+}
