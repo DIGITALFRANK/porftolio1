@@ -15,20 +15,53 @@
     <title>FRANCIS MAWULOM</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="http://digitalfrank.com/">FRANCIS [ FRANK ] MAWULOM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">about me <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">development</a>
-            <a class="nav-item nav-link" href="#">design</a>
-            <a class="nav-item nav-link" href="#">contact me</a>
+    <header>
+        <!-- <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="http://digitalfrank.com/">FRANCIS [ FRANK ] MAWULOM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">about me <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">development</a>
+                <a class="nav-item nav-link" href="#">design</a>
+                <a class="nav-item nav-link" href="#">contact me</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav> -->
+
+
+
+
+
+
+
+        <nav id="top_nav" class="navbar navbar-expand-lg navbar-light bg-light my_nav">
+            <a class="navbar-brand" href="#">FRANCIS [ FRANK ] MAWULOM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">          
+                    <li><a href="#" class="nav-link">about me</a></li>
+                    <li><a href="#" class="nav-link">development</a></li>
+                    <li><a href="#" class="nav-link">design</a></li>
+                    <li><a href="#" class="nav-link">contact</a></li>      
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+    </header>
     <div class="container-fluid">
 
 
@@ -71,7 +104,13 @@
                         &nbsp - &nbsp [ Bootstrap ], [ Sass ], [ Ruby on Rails ], [ PostgreSQL ], [ Heroku ]
                     </p>
                     <div class="dev_project dev_project_1">
-                        <iframe width="100%" height="100%" id="trampoline_vid" src="videos/trampoline.mp4" type="video/mp4" allow="autoplay loop"></iframe>
+                        <!-- <iframe width="100%" height="100%" id="trampoline_vid" src="videos/trampoline.mp4" type="video/mp4" allow="autoplay; fullscreen; loop"></iframe> -->
+
+                        <video width="100%" height="100%" id="trampoline_vid" muted autoplay loop>
+                            <source src="videos/trampoline.mp4" type="video/mp4">
+                            <source src="videos/trampoline.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
                 <div class="single_dev_project_container">
@@ -174,7 +213,8 @@
             </div>
         </div>
 
-    </p>   
+
+    </div>   <!-- end container -->
 
     <!-- ---------------------- scripts ----------------------- -->
 
