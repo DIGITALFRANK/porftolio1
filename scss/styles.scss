@@ -1,6 +1,7 @@
 
-@import "partials/vendor/normalize";
-@import "partials/vendor/animate";
+@import "partials/base/normalize";
+@import "partials/base/animate";
+@import "partials/base/media_queries";
 
 @import "partials/theme/layout";
 @import "partials/theme/typography";

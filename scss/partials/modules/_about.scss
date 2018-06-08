@@ -2,11 +2,20 @@
 #about  {
     #my_info {
         width: 100vw;
-        height: 100vh;
         margin: 100px 200px;
         text-align: center;
+        @include extra-small-only {
+            margin: 100px 20px;
+        }
+        @include small-and-above {
+            margin: 100px;
+        }
     }
    
+
+    
+
+
 
         
     display: flex;
