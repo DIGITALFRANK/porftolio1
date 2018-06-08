@@ -3594,6 +3594,7 @@ textarea {
   animation-name: slideOutUp;
 }
 
+/* 768px / 16px = 48em */
 body {
   font-family: 'lato-light', 'helvetica-light', sans-serif;
 }
@@ -3604,28 +3605,61 @@ h3 {
   padding: 50px;
 }
 
-.my_nav, .navbar {
+.my_nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.98);
   font-family: 'lato-light', 'helvetica-light', sans-serif;
 }
 
-.my_nav .navbar-brand, .navbar .navbar-brand {
+.my_nav .navbar-brand {
   font-size: .9em;
   color: #000;
 }
 
-.my_nav a, .navbar a {
+.my_nav a {
   font-size: .85em;
   color: #666;
 }
 
-.my_nav a:hover, .navbar a:hover {
+.my_nav a:hover {
   color: #000;
-  font-weight: bold;
+}
+
+.my_nav .nav_links {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.my_nav .nav_links ul {
+  list-style: none;
+  transform: translateX(-35px);
+  margin-top: -100px;
+}
+
+.my_nav .nav_links ul li {
+  margin-bottom: 15px;
+}
+
+.my_nav .navbar-toggler {
+  border: none;
+  outline: none !important;
+}
+
+.my_nav .navbar-toggler:focus, .my_nav .navbar-toggler:active {
+  outline: none !important;
 }
 
 #intro {
@@ -3653,9 +3687,20 @@ h3 {
 
 #about #my_info {
   width: 100vw;
-  height: 100vh;
   margin: 100px 200px;
   text-align: center;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  #about #my_info {
+    margin: 100px 20px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  #about #my_info {
+    margin: 100px;
+  }
 }
 
 #design {
