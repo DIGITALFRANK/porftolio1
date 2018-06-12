@@ -64,7 +64,7 @@
                 margin-top: -100px;
                 width: 300px;
                 height: 100vh;
-                background: transparent center center no-repeat / 90% auto;
+                background: transparent center top no-repeat / 90% auto;
                 background-image: url("../imgs/iphone.png");
                 display: none;
                 @include extra-small-only {
