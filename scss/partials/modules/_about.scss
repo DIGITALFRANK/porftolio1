@@ -4,9 +4,9 @@
     text-align: center;
     #my_info {
         @include extra-small-only {
-            padding: 100px 20px;
+            padding: 100px 30px;
             p {
-                text-align: left;
+                // text-align: left;
             }
         }
         @include small-and-above {
