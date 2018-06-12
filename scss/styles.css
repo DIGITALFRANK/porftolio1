@@ -3707,10 +3707,7 @@ h3 {
 
 @media only screen and (max-width: 47.9375em) {
   #about #my_info {
-    padding: 100px 20px;
-  }
-  #about #my_info p {
-    text-align: left;
+    padding: 100px 30px;
   }
 }
 
@@ -3772,18 +3769,9 @@ h3 {
   padding: 25px 250px;
 }
 
-#dev #dev_projects .single_dev_project_container .project_description span {
-  font-size: .85em;
-  color: #999;
-}
-
 @media only screen and (max-width: 47.9375em) {
   #dev #dev_projects .single_dev_project_container .project_description {
-    padding: 50px 20px;
-    text-align: left;
-  }
-  #dev #dev_projects .single_dev_project_container .project_description span {
-    text-align: center !important;
+    padding: 50px 30px;
   }
 }
 
@@ -3799,6 +3787,17 @@ h3 {
   }
 }
 
+#dev #dev_projects .single_dev_project_container .technology {
+  transform: translateY(-75px);
+  padding: 25px;
+  font-size: .85em;
+  color: blue;
+}
+
+#dev #dev_projects .single_dev_project_container .technology span {
+  color: magenta;
+}
+
 #dev #dev_projects .single_dev_project_container .dev_project {
   margin: 0 auto;
   width: 100vw;
@@ -3809,6 +3808,28 @@ h3 {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  #dev #dev_projects .single_dev_project_container .dev_project {
+    display: none;
+  }
+}
+
+#dev #dev_projects .single_dev_project_container .dev_project_mobile {
+  margin: 0 auto;
+  margin-top: -100px;
+  width: 300px;
+  height: 100vh;
+  background: transparent center center no-repeat / 90% auto;
+  background-image: url("../imgs/iphone.png");
+  display: none;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  #dev #dev_projects .single_dev_project_container .dev_project_mobile {
+    display: block;
+  }
 }
 
 .picture {
@@ -3837,5 +3858,12 @@ video {
   height: auto;
   border: solid 2px #444;
   border-radius: 2px;
+}
+
+.video_mobile {
+  width: 240px;
+  height: auto;
+  margin-top: 125px;
+  border: solid 1px #fff;
 }
 /*# sourceMappingURL=styles.css.map */
