@@ -3,9 +3,17 @@
     height: 100vh;
     h1 {
         text-align: center;
-        font-size: 4em;
         animation: fadeIn;
         animation: slideInUp;
+        @include extra-small-only {
+            font-size: 3em;
+        }
+        @include small-and-above {
+            font-size: 2em;
+        }
+        @include medium-and-above {
+            font-size: 4em;
+        }
     }
 
         

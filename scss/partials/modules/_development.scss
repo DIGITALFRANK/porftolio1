@@ -3,28 +3,75 @@
 #dev  {
     width: 100vw;
     text-align: center;
-    margin: 250px 0px;
+    margin: 100px 0px 250px 0px;
     #dev_projects {
-        .dev_project {
-            height: 500px;
-            width: inherit;
-            background: rgb(243, 243, 243);
-            margin: 50px 200px;
-            padding: 25px;
+        .single_dev_project_container {
+            margin-top: 150px;
 
-        
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+            .project_description {
+                padding: 25px 250px;
+                span {
+                    font-size: .85em;
+                    color: #999;
+                }
+                @include extra-small-only {
+                    padding: 50px 20px;
+                    text-align: left;
+                    span {
+                        text-align: center !important;
+                    }
+                }
+                @include small-and-above {
+                    padding: 50px;
+                }
+                @include medium-and-above {
+                    padding: 25px 250px;
+                }
+            }
+
+            .dev_project {
+                margin: 0 auto;
+                // width: 500px; 
+                // height: 281px; 
+                // background-size:contain;
+                // background-image:url('imgs/macbook-air.png');
+                // background: rgb(243, 243, 243);
+
+                //  10px 20px / 200px 200px
+    
+                // background: rgb(243, 243, 243) url(imgs/macbook-air.png);
+                // background: rgb(243, 243, 243) url(imgs/flower.png);
+
+                width: 1250px;
+                height: 700px;
+                background: rgb(243, 243, 243);
+                background-image: url("imgs/macbook-air.png");
+
+    
+                // @include extra-small-only {
+                //     margin: 50px 20px;
+                // }
+                // @include small-and-above {
+                //     // margin: 50px;
+                // }
+                // @include medium-and-above {
+                //     // margin: 25px 250px;
+                // }
+    
+            
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+
         }
     }
 }
 
-.single_dev_project_container {
-    margin-top: 150px;
-}
 
-.project_description {
-    padding: 25px 250px;
+.picture {
+    width: 500px;
+    height: 281px;
+    background: blue url("imgs/flower.png") 0px 0px / 100% auto;
 }
