@@ -3804,7 +3804,7 @@ h3 {
   width: 100vw;
   height: 100vh;
   background: #f3f3f3 center center no-repeat/90% auto;
-  background-image: url("../imgs/macbook-air.png");
+  background-image: url("../imgs/macbook.png");
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -3834,5 +3834,8 @@ h3 {
 
 video {
   width: 55vw;
+  height: auto;
+  border: solid 2px #444;
+  border-radius: 2px;
 }
 /*# sourceMappingURL=styles.css.map */
