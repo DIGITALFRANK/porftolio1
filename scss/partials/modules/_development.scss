@@ -31,21 +31,10 @@
 
             .dev_project {
                 margin: 0 auto;
-                // width: 500px; 
-                // height: 281px; 
-                // background-size:contain;
-                // background-image:url('imgs/macbook-air.png');
-                // background: rgb(243, 243, 243);
-
-                //  10px 20px / 200px 200px
-    
-                // background: rgb(243, 243, 243) url(imgs/macbook-air.png);
-                // background: rgb(243, 243, 243) url(imgs/flower.png);
-
-                width: 1250px;
-                height: 700px;
-                background: rgb(243, 243, 243);
-                background-image: url("imgs/macbook-air.png");
+                width: 100vw;
+                height: 100vh;
+                background: rgb(243, 243, 243)  center center no-repeat / 90% auto;
+                background-image: url("../imgs/macbook-air.png");
 
     
                 // @include extra-small-only {
@@ -71,7 +60,7 @@
 
 
 .picture {
-    width: 500px;
-    height: 281px;
-    background: blue url("imgs/flower.png") 0px 0px / 100% auto;
+    width: 100vw;
+    height: 100vh;
+    background: blue url("../imgs/flower.png") center center no-repeat / 75% auto;
 }

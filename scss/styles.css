@@ -3801,10 +3801,10 @@ h3 {
 
 #dev #dev_projects .single_dev_project_container .dev_project {
   margin: 0 auto;
-  width: 1250px;
-  height: 700px;
-  background: #f3f3f3;
-  background-image: url("imgs/macbook-air.png");
+  width: 100vw;
+  height: 100vh;
+  background: #f3f3f3 center center no-repeat/90% auto;
+  background-image: url("../imgs/macbook-air.png");
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -3812,9 +3812,9 @@ h3 {
 }
 
 .picture {
-  width: 500px;
-  height: 281px;
-  background: blue url("imgs/flower.png") 0px 0px/100% auto;
+  width: 100vw;
+  height: 100vh;
+  background: blue url("../imgs/flower.png") center center no-repeat/75% auto;
 }
 
 .contact {
@@ -3830,5 +3830,9 @@ h3 {
 
 .contact .contact_h3 {
   color: #fff;
+}
+
+video {
+  width: 55vw;
 }
 /*# sourceMappingURL=styles.css.map */
