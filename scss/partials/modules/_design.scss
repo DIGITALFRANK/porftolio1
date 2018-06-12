@@ -10,6 +10,15 @@
             background: rgb(207, 207, 207);
             margin: 50px 200px;
 
+            @include extra-small-only {
+                margin: 50px 20px;
+            }
+            @include small-and-above {
+                margin: 50px;
+            }
+            @include medium-and-above {
+                margin: 25px 250px;
+            }
         
             display: flex;
             flex-flow: row nowrap;

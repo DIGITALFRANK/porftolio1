@@ -3606,6 +3606,7 @@ h3 {
 }
 
 .my_nav {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -3673,33 +3674,49 @@ h3 {
 
 #intro h1 {
   text-align: center;
-  font-size: 4em;
   animation: fadeIn;
   animation: slideInUp;
 }
 
+@media only screen and (max-width: 47.9375em) {
+  #intro h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  #intro h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  #intro h1 {
+    font-size: 4em;
+  }
+}
+
 #about {
+  width: 100vw;
+  text-align: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
 
-#about #my_info {
-  width: 100vw;
-  margin: 100px 200px;
-  text-align: center;
-}
-
 @media only screen and (max-width: 47.9375em) {
   #about #my_info {
-    margin: 100px 20px;
+    padding: 100px 20px;
+  }
+  #about #my_info p {
+    text-align: left;
   }
 }
 
 @media only screen and (min-width: 48em) {
   #about #my_info {
-    margin: 100px;
+    padding: 100px;
   }
 }
 
@@ -3719,6 +3736,24 @@ h3 {
   align-items: center;
 }
 
+@media only screen and (max-width: 47.9375em) {
+  #design #design_projects .design_project {
+    margin: 50px 20px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  #design #design_projects .design_project {
+    margin: 50px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  #design #design_projects .design_project {
+    margin: 25px 250px;
+  }
+}
+
 .single_design_project_container {
   margin-top: 150px;
 }
@@ -3726,33 +3761,67 @@ h3 {
 #dev {
   width: 100vw;
   text-align: center;
-  margin: 250px 0px;
+  margin: 100px 0px 250px 0px;
 }
 
-#dev #dev_projects .dev_project {
-  height: 500px;
-  width: inherit;
+#dev #dev_projects .single_dev_project_container {
+  margin-top: 150px;
+}
+
+#dev #dev_projects .single_dev_project_container .project_description {
+  padding: 25px 250px;
+}
+
+#dev #dev_projects .single_dev_project_container .project_description span {
+  font-size: .85em;
+  color: #999;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  #dev #dev_projects .single_dev_project_container .project_description {
+    padding: 50px 20px;
+    text-align: left;
+  }
+  #dev #dev_projects .single_dev_project_container .project_description span {
+    text-align: center !important;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  #dev #dev_projects .single_dev_project_container .project_description {
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  #dev #dev_projects .single_dev_project_container .project_description {
+    padding: 25px 250px;
+  }
+}
+
+#dev #dev_projects .single_dev_project_container .dev_project {
+  margin: 0 auto;
+  width: 1250px;
+  height: 700px;
   background: #f3f3f3;
-  margin: 50px 200px;
-  padding: 25px;
+  background-image: url("imgs/macbook-air.png");
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.single_dev_project_container {
-  margin-top: 150px;
-}
-
-.project_description {
-  padding: 25px 250px;
+.picture {
+  width: 500px;
+  height: 281px;
+  background: blue url("imgs/flower.png") 0px 0px/100% auto;
 }
 
 .contact {
   width: 100vw;
   height: 100vh;
   background: #000;
+  margin-top: 250px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -3761,10 +3830,5 @@ h3 {
 
 .contact .contact_h3 {
   color: #fff;
-}
-
-.video {
-  position: relative;
-  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,20 +1,19 @@
 
 #about  {
+    width: 100vw;
+    text-align: center;
     #my_info {
-        width: 100vw;
-        margin: 100px 200px;
-        text-align: center;
         @include extra-small-only {
-            margin: 100px 20px;
+            padding: 100px 20px;
+            p {
+                text-align: left;
+            }
         }
         @include small-and-above {
-            margin: 100px;
+            padding: 100px;
         }
     }
    
-
-    
-
 
 
         
