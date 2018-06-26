@@ -4,30 +4,43 @@
     width: 100vw;
     text-align: center;
     #design_projects {
-        .design_project {
-            height: 500px;
-            width: inherit;
-            background: rgb(207, 207, 207);
-            margin: 50px 200px;
+        .single_design_project_container {
+            margin-top: 150px;
+            .project_description {
+                padding: 25px 250px;
+                @include extra-small-only {
+                    padding: 50px 30px;
+                    // text-align: left;
+                }
+                @include small-and-above {
+                    padding: 50px;
+                }
+                @include medium-and-above {
+                    padding: 25px 250px;
+                }
+            }
 
-            @include extra-small-only {
-                margin: 50px 20px;
+            .design_project {
+                height: 500px;
+                width: inherit;
+                background: rgb(207, 207, 207);
+
+                @include extra-small-only {
+                    margin: 50px 20px;
+                }
+                @include small-and-above {
+                    margin: 50px;
+                }
+                @include medium-and-above {
+                    margin: 25px 50px;
+                }
             }
-            @include small-and-above {
-                margin: 50px;
-            }
-            @include medium-and-above {
-                margin: 25px 250px;
-            }
-        
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
         }
+    
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.single_design_project_container {
-    margin-top: 150px;
-}
