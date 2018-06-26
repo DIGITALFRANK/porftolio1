@@ -3722,37 +3722,61 @@ h3 {
   text-align: center;
 }
 
-#design #design_projects .design_project {
-  height: 500px;
-  width: inherit;
-  background: #cfcfcf;
-  margin: 50px 200px;
+#design #design_projects {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 
+#design #design_projects .single_design_project_container {
+  margin-top: 150px;
+}
+
+#design #design_projects .single_design_project_container .project_description {
+  padding: 25px 250px;
+}
+
 @media only screen and (max-width: 47.9375em) {
-  #design #design_projects .design_project {
+  #design #design_projects .single_design_project_container .project_description {
+    padding: 50px 30px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  #design #design_projects .single_design_project_container .project_description {
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  #design #design_projects .single_design_project_container .project_description {
+    padding: 25px 250px;
+  }
+}
+
+#design #design_projects .single_design_project_container .design_project {
+  height: 500px;
+  width: inherit;
+  background: #cfcfcf;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  #design #design_projects .single_design_project_container .design_project {
     margin: 50px 20px;
   }
 }
 
 @media only screen and (min-width: 48em) {
-  #design #design_projects .design_project {
+  #design #design_projects .single_design_project_container .design_project {
     margin: 50px;
   }
 }
 
 @media only screen and (min-width: 62em) {
-  #design #design_projects .design_project {
-    margin: 25px 250px;
+  #design #design_projects .single_design_project_container .design_project {
+    margin: 25px 50px;
   }
-}
-
-.single_design_project_container {
-  margin-top: 150px;
 }
 
 #dev {
