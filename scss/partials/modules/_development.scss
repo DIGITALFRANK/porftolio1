@@ -9,10 +9,9 @@
             margin-top: 150px;
 
             .project_description {
-                padding: 25px 250px;
                 @include extra-small-only {
                     padding: 50px 30px;
-                    // text-align: left;
+                    font-size: .75em;
                 }
                 @include small-and-above {
                     padding: 50px;
@@ -24,7 +23,6 @@
 
 
             .technology {
-                transform: translateY(-75px);
                 padding: 25px;
                 font-size: .85em;
                 color: blue;
@@ -38,8 +36,10 @@
                 margin: 0 auto;
                 width: 100vw;
                 height: 100vh;
-                background: rgb(243, 243, 243)  center center no-repeat / 90% auto;
-                background-image: url("../imgs/macbook.png");
+                // background: rgb(243, 243, 243)  center center no-repeat / 90% auto;
+                background: transparent  url("../imgs/macbook.png") center center no-repeat;
+                background-size: 90%;
+                // background-image: url("../imgs/macbook.png");
 
     
                 @include extra-small-only {
@@ -61,11 +61,12 @@
 
             .dev_project_mobile  {
                 margin: 0 auto;
-                margin-top: -100px;
+                margin-top: 100px;
                 width: 300px;
                 height: 100vh;
-                background: transparent center top no-repeat / 90% auto;
+                background: transparent center top no-repeat;
                 background-image: url("../imgs/iphone.png");
+                background-size: 90%;
                 display: none;
                 @include extra-small-only {
                     display: block;
