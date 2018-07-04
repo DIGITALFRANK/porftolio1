@@ -109,7 +109,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -224,7 +225,8 @@ figure {
    * 2. Show the overflow in Edge and IE.
    */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -325,7 +327,8 @@ fieldset {
    *    `fieldset` elements in all browsers.
    */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -352,7 +355,8 @@ textarea {
    */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -3611,8 +3615,13 @@ h3 {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(255, 255, 255, 0.5);
   font-family: 'lato-light', 'helvetica-light', sans-serif;
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .my_nav .navbar-brand {
@@ -3638,15 +3647,25 @@ h3 {
   color: #000;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .my_nav .nav_links ul {
   list-style: none;
-  transform: translateX(-35px);
+  -webkit-transform: translateX(-35px);
+          transform: translateX(-35px);
   margin-top: -100px;
 }
 
@@ -3666,16 +3685,27 @@ h3 {
 #intro {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #intro h1 {
   text-align: center;
-  animation: fadeIn;
-  animation: slideInUp;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation: slideInUp;
+          animation: slideInUp;
 }
 
 @media only screen and (max-width: 47.9375em) {
@@ -3699,10 +3729,19 @@ h3 {
 #about {
   width: 100vw;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 47.9375em) {
@@ -3723,10 +3762,19 @@ h3 {
 }
 
 #design #design_projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #design #design_projects .single_design_project_container {
@@ -3789,13 +3837,10 @@ h3 {
   margin-top: 150px;
 }
 
-#dev #dev_projects .single_dev_project_container .project_description {
-  padding: 25px 250px;
-}
-
 @media only screen and (max-width: 47.9375em) {
   #dev #dev_projects .single_dev_project_container .project_description {
     padding: 50px 30px;
+    font-size: .75em;
   }
 }
 
@@ -3812,7 +3857,6 @@ h3 {
 }
 
 #dev #dev_projects .single_dev_project_container .technology {
-  transform: translateY(-75px);
   padding: 25px;
   font-size: .85em;
   color: blue;
@@ -3826,12 +3870,21 @@ h3 {
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
-  background: #f3f3f3 center center no-repeat/90% auto;
-  background-image: url("../imgs/macbook.png");
+  background: transparent url("../imgs/macbook.png") center center no-repeat;
+  background-size: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 47.9375em) {
@@ -3842,11 +3895,12 @@ h3 {
 
 #dev #dev_projects .single_dev_project_container .dev_project_mobile {
   margin: 0 auto;
-  margin-top: -100px;
+  margin-top: 100px;
   width: 300px;
   height: 100vh;
-  background: transparent center top no-repeat / 90% auto;
+  background: transparent center top no-repeat;
   background-image: url("../imgs/iphone.png");
+  background-size: 90%;
   display: none;
 }
 
@@ -3867,10 +3921,19 @@ h3 {
   height: 100vh;
   background: #000;
   margin-top: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact .contact_h3 {
