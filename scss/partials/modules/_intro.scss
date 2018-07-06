@@ -5,14 +5,21 @@
         text-align: center;
         animation: fadeIn;
         animation: slideInUp;
+        span {
+            padding: 100px;
+            color: #444;
+            font-size: .5em;
+        }
+        
         @include extra-small-only {
-            font-size: 3em;
+            font-size: 1em;
+            padding: 50px;
         }
         @include small-and-above {
-            font-size: 2em;
+            font-size: 1.5em;
         }
         @include medium-and-above {
-            font-size: 4em;
+            font-size: 2em;
         }
     }
 
