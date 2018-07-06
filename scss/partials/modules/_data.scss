@@ -1,0 +1,55 @@
+
+
+#data {
+    width: 100vw;
+    text-align: center;
+    #data_projects {
+        .single_data_project_container {
+            margin-top: 150px;
+            .project_description {
+                padding: 25px 250px;
+                @include extra-small-only {
+                    padding: 50px 30px;
+                    // text-align: left;
+                }
+                @include small-and-above {
+                    padding: 50px;
+                }
+                @include medium-and-above {
+                    padding: 25px 250px;
+                }
+            }
+
+            .technology {
+                padding: 25px;
+                font-size: .85em;
+                color: blue;
+                span {
+                    color: magenta;
+                }
+            }
+
+            .data_project {
+                height: 500px;
+                width: inherit;
+                background: rgb(0, 0, 0);
+
+                @include extra-small-only {
+                    margin: 50px 20px;
+                }
+                @include small-and-above {
+                    margin: 50px;
+                }
+                @include medium-and-above {
+                    margin: 25px 50px;
+                }
+            }
+        }
+    
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
