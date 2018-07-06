@@ -1,4 +1,14 @@
 
+.hide-nav {
+    margin-top: -100px;
+    transition: .5s;
+}
+
+.reveal-nav {
+    margin-top: 0px;
+    transition: .5s;
+}
+
 .my_nav {
     z-index: 10;
     position: fixed;
@@ -20,6 +30,7 @@
     }
 
     .navbar-toggler {
+        margin-top: -5px;
         border: none;
         outline: none !important;
         &:focus, &:active {
@@ -33,19 +44,28 @@
         text-align: center;
         text-transform: uppercase;
         font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
-        font-size: 1.5em;
+        // font-size: 1.5em;
         padding: 0;
         margin: 0;
 
         ul {
             list-style: none;
             transform: translateX(-35px);
-            margin-top: -100px;
+            // margin-top: -75px;
             li {
+                transition: .5s;
                 margin-bottom: 15px;
                 .nav-link {
                     color: #000; 
-                    font-size: 2em;
+                    @include extra-small-only {
+                        font-size: 1.5em;
+                    }
+                    @include small-and-above {
+                        font-size: 2.5em;
+                    }
+                    @include medium-and-above {
+                        font-size: 4em;
+                    }
                 }
             }
         }

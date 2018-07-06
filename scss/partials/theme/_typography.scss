@@ -46,7 +46,16 @@ body {
 
 h3 {
     font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
-    font-size: 3.5em;
     text-transform: uppercase;
     padding: 50px;
+
+    @include extra-small-only {
+        font-size: 1.5em;
+    }
+    @include small-and-above {
+        font-size: 2.5em;
+    }
+    @include medium-and-above {
+        font-size: 3.5em;
+    }
 }
