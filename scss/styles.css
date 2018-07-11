@@ -3866,6 +3866,7 @@ h3 {
 .my_nav .navbar-brand {
   font-size: .75em;
   color: #000;
+  font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
 }
 
 .my_nav .navbar-toggler {
@@ -3907,6 +3908,12 @@ h3 {
           transform: translateX(-35px);
 }
 
+@media only screen and (max-width: 47.9375em) {
+  .my_nav .nav_links ul {
+    margin-top: -100px;
+  }
+}
+
 .my_nav .nav_links ul li {
   -webkit-transition: .5s;
   transition: .5s;
@@ -3914,7 +3921,14 @@ h3 {
 }
 
 .my_nav .nav_links ul li .nav-link {
+  padding: 0 25px;
+  padding-top: 15px;
   color: #000;
+}
+
+.my_nav .nav_links ul li .nav-link:hover {
+  color: #fff;
+  background: #000;
 }
 
 @media only screen and (max-width: 47.9375em) {
@@ -3962,15 +3976,18 @@ h3 {
 }
 
 #intro h1 span {
-  padding: 100px;
   color: #444;
   font-size: .5em;
+  font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
 }
 
 @media only screen and (max-width: 47.9375em) {
   #intro h1 {
-    font-size: 1em;
+    font-size: 2em;
     padding: 50px;
+  }
+  #intro h1 span {
+    font-size: .4em;
   }
 }
 
@@ -4166,6 +4183,23 @@ h3 {
 
 @media only screen and (max-width: 47.9375em) {
   #dev #dev_projects .single_dev_project_container .dev_project_mobile {
+    display: block;
+  }
+}
+
+#dev #dev_projects .single_dev_project_container .dev_project_2_mobile {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  background: transparent center top no-repeat;
+  background-image: url("../imgs/black_hand_iphoneX.png");
+  background-size: 100%;
+  display: none;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  #dev #dev_projects .single_dev_project_container .dev_project_2_mobile {
     display: block;
   }
 }

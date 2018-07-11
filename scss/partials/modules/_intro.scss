@@ -6,14 +6,17 @@
         animation: fadeIn;
         animation: slideInUp;
         span {
-            padding: 100px;
             color: #444;
             font-size: .5em;
+            font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
         }
         
         @include extra-small-only {
-            font-size: 1em;
+            font-size: 2em;
             padding: 50px;
+            span {
+                font-size: .4em;
+            }
         }
         @include small-and-above {
             font-size: 1.5em;
