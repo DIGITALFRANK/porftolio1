@@ -27,6 +27,7 @@
     .navbar-brand {
         font-size: .75em;
         color: #000;
+        font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
     }
 
     .navbar-toggler {
@@ -44,19 +45,27 @@
         text-align: center;
         text-transform: uppercase;
         font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
-        // font-size: 1.5em;
         padding: 0;
         margin: 0;
 
         ul {
             list-style: none;
             transform: translateX(-35px);
-            // margin-top: -75px;
+            @include extra-small-only {
+                margin-top: -100px;
+            }
+
             li {
                 transition: .5s;
                 margin-bottom: 15px;
                 .nav-link {
+                    padding: 0 25px;
+                    padding-top: 15px;
                     color: #000; 
+                    &:hover {
+                        color: #fff;
+                        background: #000;
+                    }
                     @include extra-small-only {
                         font-size: 1.5em;
                     }
@@ -78,3 +87,29 @@
         align-items: center;
     }
 }
+
+
+
+
+
+
+// body:before {
+//     position: fixed;
+//     width: 100vw;
+//     height: 100vh;
+//     background: rgba(0, 0, 0, .75);
+//     content: '<h1>Hello World</br>Goddbye Yesterday</h1>';
+//     font-size: 3em;
+//     font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
+//     color: #fff;
+
+
+//     display: flex;
+//     flex-flow: column nowrap;
+//     justify-content: center;
+//     align-items: center;
+
+//     // opacity: 0;
+//     // transform: translateY(-100vh);
+
+// }

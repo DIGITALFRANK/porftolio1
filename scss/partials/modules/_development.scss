@@ -73,6 +73,23 @@
                 }
             }
 
+
+
+
+            .dev_project_2_mobile {
+                margin: 0 auto;
+                margin-top: 100px;
+                width: 100vw;
+                height: 100vh;
+                background: transparent center top no-repeat;
+                background-image: url("../imgs/black_hand_iphoneX.png");
+                background-size: 100%;
+                display: none;
+                @include extra-small-only {
+                    display: block;
+                }
+            }
+
         }
     }
 }
