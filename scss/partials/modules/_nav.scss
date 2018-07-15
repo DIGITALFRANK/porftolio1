@@ -15,7 +15,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, .95);
+    // background: rgba(255, 255, 255, .95);
+    background: rgba(0, 0, 0, .95);
     font-family: 'lato-light', 'helvetica-light', sans-serif;
 
         -webkit-backdrop-filter: blur(10px);
@@ -26,7 +27,7 @@
 
     .navbar-brand {
         font-size: .75em;
-        color: #000;
+        color: #fff;
         font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
     }
 
@@ -61,7 +62,7 @@
                 .nav-link {
                     padding: 0 25px;
                     padding-top: 15px;
-                    color: #000; 
+                    color: #fff; 
                     &:hover {
                         color: #fff;
                         background: #000;

@@ -32,7 +32,8 @@
             .data_project {
                 height: 500px;
                 width: inherit;
-                background: rgb(0, 0, 0);
+                // background: rgb(0, 0, 0);
+                background: #444;
 
                 @include extra-small-only {
                     margin: 50px 20px;
