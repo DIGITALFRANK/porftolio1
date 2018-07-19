@@ -3,6 +3,7 @@
 #dev  {
 
     background: #1b1c21;
+    // background: #101113;
 
 
 
@@ -33,6 +34,12 @@
                 color: blue;
                 span {
                     color: magenta;
+                }
+                i {
+                    font-size: .75em;
+                    color: #999;
+                    font-style: normal;
+                    letter-spacing: 1px;
                 }
             }
 

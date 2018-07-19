@@ -44,3 +44,74 @@
     }
 }
 
+
+
+/****** feature pitch ******/
+
+.design_feature {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    .col {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        img {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .slideshow {
+        position: relative;
+        list-style: none;
+        .slide {
+            width: 100%;
+            position: absolute;
+            transition: opacity 1.5s ease-in;
+        }
+    }
+    .design_pitch {
+        width: 100%;
+        height: 700px;
+        background: #000 url("../imgs/design/product_design.svg") center top no-repeat;
+        background-size: 100%;
+        // animation: flashPitch 3s infinite;
+    }
+
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+
+
+
+// @keyframes flashPitch {
+//     0% {background: #000 url("../imgs/design/identity_design.svg") center top no-repeat;}
+//     50% {background: #000 url("../imgs/design/interaction_design.svg") center top no-repeat;}
+//     100% {background: #000 url("../imgs/design/user_experience_design.svg") center top no-repeat;}
+// }
+
+
+// @-webkit-keyframes flashPitch {
+//     0% {background: #000 url("../imgs/design/identity_design.svg") center top no-repeat;}
+//     33% {background: #000 url("../imgs/design/interaction_design.svg") center top no-repeat;}
+//     66% {background: #000 url("../imgs/design/user_experience_design.svg") center top no-repeat;}
+//     100% {background: #000 url("../imgs/design/product_design.svg") center top no-repeat;}
+// }
+// @-moz-keyframes flashPitch {
+//     0% {background: #000 url("../imgs/design/identity_design.svg") center top no-repeat;}
+//     33% {background: #000 url("../imgs/design/interaction_design.svg") center top no-repeat;}
+//     66% {background: #000 url("../imgs/design/user_experience_design.svg") center top no-repeat;}
+//     100% {background: #000 url("../imgs/design/product_design.svg") center top no-repeat;}
+// }
+
+// @keyframes flashPitch {
+//     0% {background: #000 url("../imgs/design/identity_design.svg") center top no-repeat;}
+//     33% {background: #000 url("../imgs/design/interaction_design.svg") center top no-repeat;}
+//     66% {background: #000 url("../imgs/design/user_experience_design.svg") center top no-repeat;}
+//     100% {background: #000 url("../imgs/design/product_design.svg") center top no-repeat;}
+// }
