@@ -1,8 +1,9 @@
 
 
 #dev  {
-
+    padding: 250px 0;
     background: #1b1c21;
+    background: #121118;
     // background: #101113;
 
 
@@ -44,32 +45,41 @@
             }
 
 
-            .dev_project {
-                margin: 0 auto;
+            .dev_project_wrapper {
                 width: 100vw;
-                height: 100vh;
-                // background: rgb(243, 243, 243)  center center no-repeat / 90% auto;
-                background: transparent  url("../imgs/macbook___pro.png") center center no-repeat;
-                background-size: 74%;
-                // background-image: url("../imgs/macbook.png");
+                height: 100%;
+                background: transparent  url("../imgs/color_burst.png") center center no-repeat;
+                // background-size: 90%;
 
+                .dev_project {
+                    margin: 0 auto;
+                    width: 100vw;
+                    height: 100vh;
+                    // background: rgb(243, 243, 243)  center center no-repeat / 90% auto;
+                    background: transparent  url("../imgs/macbook___pro.png") center center no-repeat;
+                    background-size: 74%;
+                    // background-image: url("../imgs/macbook.png");
     
-                @include extra-small-only {
-                    display: none;
+        
+                    @include extra-small-only {
+                        display: none;
+                    }
+                    // @include small-and-above {
+                    //     // margin: 50px;
+                    // }
+                    // @include medium-and-above {
+                    //     // margin: 25px 250px;
+                    // }
+        
+                
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
                 }
-                // @include small-and-above {
-                //     // margin: 50px;
-                // }
-                // @include medium-and-above {
-                //     // margin: 25px 250px;
-                // }
-    
-            
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
             }
+
+            
 
             .dev_project_mobile  {
                 margin: 0 auto;
@@ -87,6 +97,7 @@
 
 
 
+    // test for black phone iphone X image
 
             .dev_project_2_mobile {
                 margin: 0 auto;

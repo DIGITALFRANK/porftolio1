@@ -4176,7 +4176,9 @@ footer #copyright {
 }
 
 #dev {
+  padding: 250px 0;
   background: #1b1c21;
+  background: #121118;
   width: 100vw;
   text-align: center;
   margin: 100px 0px 250px 0px;
@@ -4222,7 +4224,13 @@ footer #copyright {
   letter-spacing: 1px;
 }
 
-#dev #dev_projects .single_dev_project_container .dev_project {
+#dev #dev_projects .single_dev_project_container .dev_project_wrapper {
+  width: 100vw;
+  height: 100%;
+  background: transparent url("../imgs/color_burst.png") center center no-repeat;
+}
+
+#dev #dev_projects .single_dev_project_container .dev_project_wrapper .dev_project {
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
@@ -4244,7 +4252,7 @@ footer #copyright {
 }
 
 @media only screen and (max-width: 47.9375em) {
-  #dev #dev_projects .single_dev_project_container .dev_project {
+  #dev #dev_projects .single_dev_project_container .dev_project_wrapper .dev_project {
     display: none;
   }
 }
