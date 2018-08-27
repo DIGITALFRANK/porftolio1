@@ -48,8 +48,11 @@
             .dev_project_wrapper {
                 width: 100vw;
                 height: 100%;
-                background: transparent  url("../imgs/color_burst.png") center center no-repeat;
+                background: transparent; //  url("../imgs/color_burst_2.png") center center no-repeat;
                 // background-size: 90%;
+                @include medium-and-above {
+                    background: transparent  url("../imgs/color_burrrst.png") center center no-repeat;
+                }
 
                 .dev_project {
                     margin: 0 auto;
@@ -64,12 +67,7 @@
                     @include extra-small-only {
                         display: none;
                     }
-                    // @include small-and-above {
-                    //     // margin: 50px;
-                    // }
-                    // @include medium-and-above {
-                    //     // margin: 25px 250px;
-                    // }
+        
         
                 
                     display: flex;
