@@ -3991,6 +3991,8 @@ footer #copyright {
 
 #intro h1 {
   color: white;
+  font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
+  text-transform: capitalize;
   text-align: center;
   -webkit-animation: fadeIn;
           animation: fadeIn;
@@ -4001,12 +4003,12 @@ footer #copyright {
 #intro h1 span {
   color: #444;
   font-size: .5em;
-  font-family: 'ITC Avant Garde Gothic Std Bold', helvetica-light, sans-serif;
+  font-family: 'lato-light', 'helvetica-light', sans-serif;
 }
 
 @media only screen and (max-width: 47.9375em) {
   #intro h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 50px;
   }
   #intro h1 span {
